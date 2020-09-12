@@ -6,7 +6,9 @@ import (
 	semaphore "github.com/da-moon/go-semaphore"
 )
 
-// GatedWriter ...
+// GatedWriter  is an io.Writer implementation that buffers all of its
+// data into an internal buffer until it is told to let data through.
+// it's used to log a daemon's stdout/stderr in a more orderly fashion
 type GatedWriter struct {
 	writer io.Writer
 
@@ -16,6 +18,7 @@ type GatedWriter struct {
 	lock semaphore.Semaphore
 }
 
+// NewGatedWriter returns a new gated writer
 func NewGatedWriter(writer io.Writer) *GatedWriter {
 	return &GatedWriter{
 		writer: writer,
