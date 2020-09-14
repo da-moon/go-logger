@@ -2,20 +2,27 @@ package logger
 
 import "io"
 
-// Option - server options setter method
+// LevelFilterOption - sets levelFilter options
 type LevelFilterOption func(*levelFilter)
 
-// string representing log level
+// LogLevel string representing log level
 type LogLevel string
 
 // default log levels
 var (
+	// TraceLevel ...
 	TraceLevel LogLevel = "TRACE"
+	// DebugLevel ...
 	DebugLevel LogLevel = "DEBUG"
-	InfoLevel  LogLevel = "INFO"
-	WarnLevel  LogLevel = "WARN"
+	// InfoLevel ...
+	InfoLevel LogLevel = "INFO"
+	// WarnLevel ...
+	WarnLevel LogLevel = "WARN"
+	// ErrorLevel ...
 	ErrorLevel LogLevel = "ERROR"
 )
+
+// DefaultLogLevels ...
 var DefaultLogLevels = []LogLevel{
 	TraceLevel,
 	DebugLevel,
@@ -30,11 +37,15 @@ func WithWriter(arg io.Writer) LevelFilterOption {
 		s.writer = arg
 	}
 }
+
+// WithMinLevel ...
 func WithMinLevel(arg string) LevelFilterOption {
 	return func(s *levelFilter) {
 		s.minLevel = LogLevel(arg)
 	}
 }
+
+// WithLevels ...
 func WithLevels(arg []string) LevelFilterOption {
 	return func(s *levelFilter) {
 		if s.levels == nil {

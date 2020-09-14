@@ -7,6 +7,7 @@ import (
 	"sync"
 )
 
+// LevelFilter ...
 type LevelFilter interface {
 	io.Writer
 	Check(line []byte) bool
@@ -20,6 +21,7 @@ type levelFilter struct {
 	minLevel  LogLevel
 }
 
+// NewLevelFilter ...
 func NewLevelFilter(opts ...LevelFilterOption) LevelFilter {
 	result := &levelFilter{
 		once: sync.Once{},
@@ -57,6 +59,7 @@ func (l *levelFilter) Check(line []byte) bool {
 	return !ok
 }
 
+// Write ...
 func (l *levelFilter) Write(p []byte) (n int, err error) {
 	if !l.Check(p) {
 		return len(p), nil
