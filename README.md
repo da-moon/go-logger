@@ -10,7 +10,7 @@
 </p>
 
 golang logger package. This package is experimental. use at your own risk.
-this package combanies various logger libraries from `hashicorp` and adds some extra features and optimizations.
+this package combines various logger libraries from `hashicorp` and adds some extra features, safety checks and optimizations.
 
 
 ## benchmark

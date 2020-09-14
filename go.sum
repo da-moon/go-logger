@@ -9,8 +9,8 @@ github.com/bgentry/speakeasy v0.1.0 h1:ByYyxL9InA1OWqxJqqp2A5pYHUrCiAL6K3J+LKSsQ
 github.com/bgentry/speakeasy v0.1.0/go.mod h1:+zsyZBPWlz7T6j88CTgSN5bM796AkVf0kBD4zp0CCIs=
 github.com/da-moon/go-primitives v0.0.2 h1:B1ODZ5pIND4eGVQS7wCeCWyV3Cd50oZLwBI8Ic7aK1Y=
 github.com/da-moon/go-primitives v0.0.2/go.mod h1:P+LUyhKxDxTXoYVBiodIqjt9dRWH/9qv76/Th8Y3IrA=
-github.com/da-moon/go-semaphore v0.0.1 h1:0l3Y+VwmpLJfsMUxsbRseAZw2cGnXhaerw6G1VrSDqw=
-github.com/da-moon/go-semaphore v0.0.1/go.mod h1:u/OX05eIHfEnBBabkCKbG2lod950fnyE6X8RRC+zMhA=
+github.com/da-moon/go-semaphore v0.0.2 h1:8dqpzgB3CfMk+4eJ9T8NB598bJFi2nWvgNG8UqJLBMM=
+github.com/da-moon/go-semaphore v0.0.2/go.mod h1:u/OX05eIHfEnBBabkCKbG2lod950fnyE6X8RRC+zMhA=
 github.com/da-moon/go-test v0.0.1 h1:8ejIFf3fHNt52jQMZ8OFMgSO3CqZQPjpbD/Xvfh/Y4A=
 github.com/da-moon/go-test v0.0.1/go.mod h1:TLnzLAcWNmM+57vC98QQBrdJJYR4qLUnAtJ1tPgLDH0=
 github.com/davecgh/go-spew v1.1.0 h1:ZDRjVQ15GmhC3fiQ8ni8+OwkZQO4DARzQgrnXU1Liz8=

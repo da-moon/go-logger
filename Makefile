@@ -22,19 +22,19 @@ info:
 release-major:
 	- git checkout master
 	- git pull
-	- git tag -a $(MAJORVERSION) -m 'release $(MAJORVERSION)'
+	- git tag -a v$(MAJORVERSION) -m 'release $(MAJORVERSION)'
 	- git push origin --tags
 .PHONY: release-minor
 .SILENT: release-minor
 release-minor:
 	- git checkout master
 	- git pull
-	- git tag -a $(MINORVERSION) -m 'release $(MINORVERSION)'
+	- git tag -a v$(MINORVERSION) -m 'release $(MINORVERSION)'
 	- git push origin --tags
 .PHONY :release-patch
 .SILENT :release-patch
 release-patch:
 	- git checkout master
 	- git pull
-	- git tag -a $(PATCHVERSION) -m 'release $(PATCHVERSION)'
+	- git tag -a v$(PATCHVERSION) -m 'release $(PATCHVERSION)'
 	- git push origin --tags
