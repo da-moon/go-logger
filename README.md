@@ -9,7 +9,8 @@
   <img src="https://img.shields.io/github/last-commit/da-moon/go-logger/master" alt="GitHub last commit">
 </p>
 
-golang logger package. This package is experimental. use at your own risk
+golang logger package. This package is experimental. use at your own risk.
+this package combanies various logger libraries from `hashicorp` and adds some extra features and optimizations.
 
 
 ## benchmark
